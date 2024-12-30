@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>V-W-D_Invoice</title>
+    <link rel="stylesheet" href="Assets/css/style.css" />
+</head>
+
+<body>
+    <!-- NavBar Section -->
+    <section class="navbar">
+        <nav>
+            <ul class="navList">
+                <img src="Assets/img/logo.png" alt="" class="navbarLogo" />
+                <li><a href="#">Home</a></li>
+                <li><a href="Assets/html/history.html">History</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <!-- Company Details Section -->
+    <section class="heading">
+        <h1>VIJAYALAXMI WOOD WORKS & DESIGNINGS</h1>
+        <p>(We deal all types of wood works, materials and machine works)</p>
+        <address>
+            Satyanarayana Veedhi, Buragam, Korasavada, Pathapatnam, Srikakulam,
+            Andhra Pradesh, 532214
+        </address>
+        <label>Page No. :</label>
+        <input id="pageNo" type="number" readonly />
+        <label>Date:</label>
+        <input id="currentDateTime" type="date" readonly />
+        <label>Account Number:</label>
+        <input id="accountNumber" type="text" placeholder="Bank account number" required />
+        <label>IFSC Code:</label>
+        <input id="ifscCode" type="text" placeholder="IFSC Code" required />
+    </section>
+
+    <!-- Customer Details Section -->
+    <section class="custom">
+        <label>Name :</label>
+        <input type="text" placeholder="Customer Name" required />
+        <label>Mobile Number :</label>
+        <input type="tel" placeholder="Customer Number" required />
+        <label>Place :</label>
+        <select>
+            <option>Select</option>
+            <option>Buragam</option>
+            <option>Bonthu</option>
+            <option>Chinna Logidi</option>
+            <option>Danupuram</option>
+            <option>Ganguwada</option>
+            <option>Korasavada</option>
+            <option>Narasanapeta</option>
+            <option>Navuthala</option>
+            <option>Parlakhimundi</option>
+            <option>Pathapatnam</option>
+            <option>Peddasana</option>
+            <option>Pedda Logidi</option>
+            <option>Sarovkota</option>
+            <option>Seetharampilli</option>
+            <option>Siddi</option>
+            <option>Srikakulam</option>
+            <option>Tekkali</option>
+            <option>Temburu</option>
+        </select>
+    </section>
+
+    <!-- Work Items Table Section -->
+    <section class="itemTables">
+        <table id="itemtable" border="1">
+            <tbody>
+                <tr>
+                    <th>Sl.No.</th>
+                    <th>Items</th>
+                    <th>Qnty</th>
+                    <th>Price</th>
+                    <th>Total Price</th>
+                    <th>Grand Total</th>
+                </tr>
+            </tbody>
+        </table>
+        <button id="addItemBtn" onclick="addRow()">Add Items</button>
+        <button id="saveBtn">Save</button>
+        <button id="shareBtn">Share This Invoice</button>
+    </section>
+
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="contact">
+            <p>Name : G.Eswar Rao</p>
+            <p>Mobile : +91 9505-078-817</p>
+            <p>Place : Buragam</p>
+        </div>
+        <p>&copy; 2024 All Rights Reserved. Made with <span class="heart">♥</span> by L Hemasundar</p>
+    </footer>
+    <script src="Assets/js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,343 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #3c8dbc;
+    padding: 20px;
+    text-align: center;
+}
+
+.navbarLogo {
+    height: 50px;
+    margin-right: 20px;
+}
+
+.navList {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navList li {
+    margin-left: 20px;
+}
+
+.navList li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navList li a:hover {
+    color: #ffcd38;
+}
+
+/* Heading Section - Centered Text Only */
+.heading {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 20px auto; /* Centers the section horizontally */
+    width: 80%; /* Optional: Adjust the width to your preference */
+}
+
+/* Centering H1, P, and Address */
+.heading h1, 
+.heading p, 
+.heading address {
+    text-align: center; /* Centers the text inside these elements */
+}
+
+/* Update the heading styles to make the text center-aligned */
+.heading h1 {
+    color: #3c8dbc;
+    font-size: 45px;
+    margin-bottom: 5px;
+}
+
+.heading p {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.heading address {
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.heading label {
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+}
+
+.heading input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.heading input:focus {
+    border-color: #3c8dbc;
+    outline: none;
+}
+
+/* Customer Details Section */
+.custom {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 80%;
+}
+
+.custom label {
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+}
+
+.custom input, .custom select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.custom select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.custom input:focus, .custom select:focus {
+    border-color: #3c8dbc;
+    outline: none;
+}
+
+/* Item Tables Section */
+.itemTables {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    width: 80%;
+}
+
+.itemTables table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    unicode-bidi: isolate;
+    border-color: inherit;
+}
+
+.itemTables th, .itemTables td {
+    align-items: center;
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.itemTables th {
+    background-color: #3c8dbc;
+    color: white;
+}
+
+.itemTables button {
+    background-color: #3c8dbc;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.itemTables button:hover {
+    background-color: #ffcd38;
+}
+
+/* Table Styles */
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+}
+.history table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+.history th, .history td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.history th {
+    background-color: #3c8dbc;
+    color: white;
+}
+
+.history tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.history tr:hover {
+    background-color: #ddd;
+}
+
+
+/* Footer Styles */
+footer {
+    background-color: #3c8dbc;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+footer .contact {
+    margin-bottom: 15px;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+footer .heart {
+    color: red;
+    font-size: 18px;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+body {
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .navbarLogo {
+        height: 40px;
+    }
+
+    .navList {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .navList li {
+        margin-left: 0;
+        margin-bottom: 10px;
+        gap: 10px;
+    }
+
+    .heading h1 {
+        font-size: 26px;
+        font-weight: 700;
+    }
+
+    .heading p {
+        font-size: 16px;
+    }
+
+    .heading input, .custom input, .custom select {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .itemTables table th, .itemTables table td {
+        width: 100%;
+        padding: 6px;
+        gap: 10px;
+    }
+
+    .itemTables button {
+        width: 100%;
+        padding: 15px;
+    }
+}
+/* History Responsive */
+@media (max-width: 768px) {
+    .navbar nav {
+        flex-direction: column;
+    }
+
+    .navList {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .history table {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .history th, .history td {
+        padding: 6px;
+    }
+
+    footer {
+        position: relative;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 18px;
+    }
+
+    .navbarLogo {
+        height: 40px;
+    }
+
+    .navList li a {
+        font-size: 14px;
+    }
+
+    .history th, .history td {
+        padding: 5px;
+        font-size: 10px;
+    }
+}
